@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login and Signup Form</title>
+</head>
+<body>
+	<form name="login" method="POST" action="#">
+		<fieldset>
+			<legend>Login IN</legend>
+			<input type="text" name="username" placeholder="Username/Email" />
+			<br/>
+			<input type="password" name="password" placeholder="Password" />
+			<br/>
+			<input type="submit" name="submit" value="Login" />
+		</fieldset>
+	</form>
+
+	<br/>
+	<h1>Sign UP</h1>
+	<form action="#" method="POST" name="singup" enctype="multipart/form-data">
+		<fieldset>
+			<legend>SingUP</legend>
+			<table border=0 cellpadding="5" cellspacing="5" width="75%" >
+				<tr>
+					<td><label>Full Name</label></td>
+					<td><input type="text" name="fullname" size="30" maxlength="50" required="required" placeholder="Full Name" /> * 
+					</td>
+				</tr>
+				<tr>
+					<td><label>Email Address</label></td>
+					<td><input type="email" name="email" placeholder="you@domain.com" size="30" maxlength="50" required /> </td>
+				</tr>
+				<tr>
+					<td> Gender
+					</td>
+					<td>
+						<input type="radio" name="gender" value="M" checked="checked" />Male
+						<input type="radio" name="gender" value="F" /> Female
+						<input type="radio" name="gender" value="O" /> Others
+					</td>
+				</tr>
+				<tr>
+					<td> Courses
+					</td>
+					<td>
+						<input type="checkbox" name="php" value="php" checked />PHP
+						<input type="checkbox" name="java" value="java" />Java
+						<input type="checkbox" name="asp" value="asp" />ASP
+					</td>
+				</tr>
+				<tr>
+					<td>Country where are you from</td>
+					<td>
+						<select name="country" size="1">
+							<option value="">--Choose--</option>
+							<option value="NP">Nepal</option>
+							<option value="IN">India</option>
+							<option value="BA" selected="selected">Bangladesh</option>
+							<option value="MA">Maldives</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Photo</td>
+					<td>
+						<input type="file" name="photo"/>
+					</td>
+				</tr>
+				<tr>
+					<td>DOB</td>
+					<td><input type="date" name="dob" placeholder="mm/dd/yyyy" />
+				<tr>
+				<tr>
+					<td>Message</td>
+					<td>
+						<textarea rows="10" cols="45" name="message"></textarea>
+					</td>
+				</tr>
+					<td>
+					</td>
+					<td>
+						<input type="submit" name="submit" value="Send"/>
+						<input type="reset" name="reset" value="Clear"/>
+					</td>
+				</tr>
+			</table> 
+		</fieldset>
+	</form>
+</body>
+</html>

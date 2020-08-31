@@ -1,0 +1,23 @@
+/* Universal Selector */
+*{margin:0; padding:0;}
+
+/* Class Selector */
+.mypara{
+	color:#ff0000;
+}
+
+/*ID selector */
+#container{
+	width:1140px;
+	min-height:400px;
+	margin:auto auto;
+	background-color: #eeeeee;
+}
+
+/*TYPE Selector*/
+h1{
+	color:#00ff00;
+	font-variant:small-caps
+}
+
+body{background-color: #00ccee;}
