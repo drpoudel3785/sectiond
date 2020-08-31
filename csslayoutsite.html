@@ -4,16 +4,50 @@
 	<title>My New Site Layout By CSS</title>
 	<!-- attaching external style sheet-->
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script>
+        // Single line comment
+		/* multi line comment
+		   # Author: Dharma Raj Poudel
+		   # Author URL: https:drpoudel.com.np
+		 */
+		 //Declare Variables
+		var a=10;
+		b = 20;
+		let c = 30;  
+		d=a+b+c;
+		alert("The Total is: " +d);
+	</script>
 </head>
 <body>
 	<div id="container">
-		<h1>Welcome to the site</h1>
-		<p class="mypara">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		.</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur riatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="row">
+			<div class="col100">
+				<div class="banner"><h1>Welcome to the site</h1></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col100">Menu will be here</div>
+		</div>
+		<div class="row">
+			<div class="colsm100 col25  colmd50"><h1>My Heading</h1>
+			 <img src="images/everest.jpg" class="imgresponsive circleimg" />
+			</div>
+			<div class="colsm100 col25  colmd50"><h1>My Heading</h1>
+				<img src="images/everest.jpg" class="imgresponsive circleimg" />
+			   </div>
+			   <div class="colsm100 col25  colmd50"><h1>My Heading</h1>
+				<img src="images/everest.jpg" class="imgresponsive" />
+			   </div>
+			<div class="colsm100 col25  colmd50"><h1>My Heading</h1>
+				<img src="images/everest.jpg" class="imgresponsive" />
+			   </div>
+		</div>
+
+		<div class="row">
+			<div class="col100">Footer will be here</div>
+		</div>	
 	</div>
 </body>
 </html>

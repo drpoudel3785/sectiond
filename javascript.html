@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascirpt examples</title>
+</head>
+<body>
+
+    <script>
+
+        //Loop
+        var count=1;
+        document.write("Loop Stated: ");
+        while(count<=10)
+        {
+            document.write("<br/> " + count);
+            //count++;
+            count=count+1;
+        }
+        document.write("<br/>Loop Ended: ");
+
+        //For Loop
+        for (i = 1; i <= 10; i++ ) {
+            document.write("<br/> " + i);
+        }
+
+        //Do while
+        var a=10;
+        do{
+            document.write("<br/> " + a);
+            a--;
+         } while(a>=1);
+
+         /*
+
+         *
+         * *
+         * * *
+         * * * *
+         * * * * *
+
+         */
+
+         for (i = 1; i <= 5; i++) {
+             for(j = 1; j <= i; j++){
+                 document.write(" * ");
+             }
+             document.write("<br/>");
+         }
+
+         //Array
+         var sports = new Array("Football", "Volleyball", "Cycling", "Tenish");
+         document.write("<br/>"+ sports[0]);
+         document.write("<br/>"+ sports[1]);
+         document.write("<br/>"+ sports[2]);
+         //to count the length of arry we can use length functions in javascirpt
+         var count = sports.length;
+         document.write("<br/> There are " +count +" itsm in sports array");
+            var i=0;
+         while(i < count) {
+             document.write("<br> Index "+ i + " Contains the value " +sports[i]);
+             i=i+1;
+         }
+         document.write("<br/>");
+
+
+         var myText = "Javascript";
+	document.write("<br>" + myText.length);
+	document.write("<br>" + myText.charAt(4));
+	document.write("<br>" + myText.indexOf("va"));
+	document.write("<br>" + myText.substr(0.4));
+	document.write("<br>" + myText.toUpperCase());
+	document.write("<br>" + myText.toLowerCase());
+
+
+
+        // Single line comment
+		/* multi line comment
+		   # Author: Dharma Raj Poudel
+		   # Author URL: https:drpoudel.com.np
+		 */
+		 //Declare Variables
+
+          //prompt is used for taking the users input
+      // name = prompt("Enter your name");
+      // alert("Welcome, " +name)
+      // document.write("<br/>Welcome : " +name + "<br/>")
+
+
+       //parseInt
+       //parseFloat
+
+      // num1=parseInt(prompt("Enter the first Number: "));
+      // num2=parseInt(prompt("Enter the Second Number: "));
+      // sum=num1+num2;
+      // alert("The sum of "+num1 +" and " +num2 + " is " + sum)
+
+		var a=10;
+		b = 20.45;
+		let c = 30;  
+		d=a+b+c;
+        diff=c-b;
+        div=c/a;
+        mul=a*b;
+        mod=c%a;
+		//alert("The Total is: " +d);
+        document.write("The sum is " +d);
+        document.write("<br/> The Difference is: " +diff)
+        document.write("<br/> The division is: " +div);
+        document.write("<br/> The Remider is: " +mod)
+
+
+       /* var userinput;
+        userinput=confirm("Are you sure you want to close this page? ")
+        if(userinput==true)
+        {
+            window.close();
+        }
+        else
+        {
+
+        }
+
+        */
+        //Program to find out the largest number between two numbers
+        var num1=20;
+        var num2=10;
+        if(num1==num2)
+        {
+            document.write(num1+ " and " + num2 + " is Equal. ")
+        }
+        else if(num1>num2)
+        {
+            document.write(num1+ " Is greater than " +num2)
+        }
+        else
+        {
+            document.write(num2 +  " Is greater than " + num1)
+        }
+
+
+        //Switch Case
+          var grade="C";
+          switch(grade)
+          {
+              case "A":
+              {
+                  document.write("Outstanding Performance.");
+                  break;
+              }
+              case "B":
+              {
+                  document.write("Good Performance:")
+                  break;
+              }
+              default:
+              {
+                  document.write("Grade is not obtainded");
+              }
+          }
+
+	</script>
+    
+</body>
+</html>

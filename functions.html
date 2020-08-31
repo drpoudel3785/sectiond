@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Functions</title>
+    
+</head>
+<body onload="clockStart()">
+    <div id="currentTime" style="float:right; border:2px solid #ffcc33; width:200px;"></div>
+   
+    <div id="clock">
+    	<span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>
+    </div>
+
+    <script>
+        var timerId; // current timer if started
+        function clockStart() { 
+             if (timerId) 
+                return;
+              timerId = setInterval(update, 1000);
+              update();  // (*)
+        }
+        function update() {
+  var date = new Date();
+  var hours = date.getHours();
+  if (hours < 10) 
+	hours = '0'+hours;
+  document.getElementById('hour').innerHTML = hours;
+  var minutes = date.getMinutes();
+  if (minutes < 10) 
+	minutes = '0'+minutes;
+  document.getElementById('min').innerHTML = minutes;
+  var seconds = date.getSeconds();
+  if (seconds < 10) 
+	seconds = '0'+seconds;
+  document.getElementById('sec').innerHTML = seconds;
+}
+</script>    
+    
+    <button name="Sum" onclick="sumTwo()">SUM</button>
+
+    <script>
+        /*
+        var returned_sum = f3();
+	    document.write(returned_sum);
+        document.write(f3());
+        
+        var sum=f4(10, 20, 30 );
+        document.write("<br/>The Sum is "+ sum);
+        */
+
+    </script>
+    <script src="js/myfunctions.js"></script>
+</body>
+</html>

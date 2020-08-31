@@ -1,49 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Site Layout</title>
+	<title>CSS Complete Layout</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-	<table border="0" cellpadding="0" cellspacing="0" width="960px" align="center">
-		<tr>
-			<td>
-				<table border=0>
-					<tr>
-						<td>Logo</td>
-						<td>Banner</td>
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<table border="0">
-					<tr>
-						<td>Home</td>
-						<td>About</td>
-						<td>Gallery</td>
-						<td>Downloads</td>
-						<td>Blog</td>
-						<td>Contact</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td></td>
-		</tr>
-		<tr>
-			<td>
-				<table border=0 cellpadding="10" cellspacing="10" width="100%">
-					<tr>
-						<td>Column 1</td>
-						<td>Column 2</td>
-						<td> Column 3</td>
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td></td>
-		</tr>
-	</table>
+	<div id="container">
+		<div class="row">
+			<div class="col100">
+				<div class="banner"><h1>Welcome to the site</h1></div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col100">
+				
+	<nav>
+        	<ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col50">Slider</div>
+			<div class="col50">
+				<div class="row">
+					<div class="col25">Thumbnail</div>
+					<div class="col75">Description</div>
+				</div>
+				<div class="row">
+					<div class="col25">Thumbnail</div>
+					<div class="col75">Description</div>
+				</div>
+				<div class="row">
+					<div class="col25">Thumbnail</div>
+					<div class="col75">Description</div>
+				</div>
+			</div><!-- another col50-->
+		</div>
+		<div class="clear"></div>
+		<div class="row">
+			<div class="col33">
+				<h2>Everest </h2>
+				<img src="images/everest.jpg" width="375px"  alt="Everest"  title="Everst" class="myhoverimg"/>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			</div>
+			<div class="col33">
+				<div class="box1">
+					<p>Box content will be here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+					</p>
+				</div>
+				<div class="circle">
+					The Circle content will be here.
+				</div>
+
+				
+
+			</div>
+			<div class="col33">Column3</div>
+		</div>
+		<div class="clear"></div>
+
+		<div class="row">
+			<div class="col25">
+				Column1
+			</div>
+			<div class="col25">
+				Column2
+			</div>
+			<div class="col25">
+				Column3
+			</div>
+			<div class="col25">
+				Column4
+			</div>
+		</div>
+		<div class="row">
+			<div class="col100">Footer</div>
+		</div>
+	</div><!-- Container-->
+
+	<div id="social">
+		<ul>
+			<li> <i> F </i></li>
+			<li> <i>T</i></li>
+			<li> <i>I</i></li>
+			<li><i>V</i></li>
+		</ul>
+	</div>
+
 </body>
 </html>

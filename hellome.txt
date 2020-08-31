@@ -1,0 +1,12 @@
+Command we have done
+
+1. git inti
+2. git status
+
+3. git add filename.ext
+4. git commit -m "Your commit meessage here"
+
+5. git log
+6. git restore filename.ext
+
+
