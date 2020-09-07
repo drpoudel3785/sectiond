@@ -4,14 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Functions</title>
+
+    <script>
+      function goodbye() {
+        alert("Good Bye! Have a nice day!!!! ");
+      }
+      
+    </script>
+
+<script>
+  <!-- 
+  window.onbeforeunload = function goodbye() {
+    return "Are you really want to switch the pages?";
+  -->
+  
+  };
+  //-->
+</script>
+
+
+
+    <style>
+      .test {background-color: #ffcc33;}
+    </style>
     
 </head>
-<body onload="clockStart()">
-    <div id="currentTime" style="float:right; border:2px solid #ffcc33; width:200px;"></div>
+<body onload="clockStart()" onbeforeunload="goodbye()">
+
+  <button onclick= "changeBgColor()" class="test">Change color</button>
+  
+
+    <div onmouseover="over()" onmouseout="out()" id="currentTime" style="float:right; border:2px solid #ffcc33; width:200px;"></div>
    
-    <div id="clock">
+    <div id="clock" >
     	<span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>
     </div>
+
+    <a href="https://google.com" >Google</a>
+
+    <button onclick= "changeBgColor()" class="test">Change color</button>
+
+<form>
+  <input type="text" onFocus="message('one-line text')">
+  <textarea rows=2 cols=20 onfocus="message('multipleline text')">
+  </textarea>
+  <select onFocus="message('Field of choice')">
+  <option>Point 1
+  <option>Point 2
+  <option>Point 3
+  </select>
+  </form>
+  <script>
+    var btn = document.querySelector('.test');
+    function random(number) {
+           return Math.floor(Math.random() * (number+1));
+    }
+    function changeBgColor() {
+          var rCol = 'rgb(' + random(255) + ',' + random(255) 				+ ',' + random(255) + ') ';
+          document.body.style.backgroundColor = rCol;
+    }
+  </script>
+
+  <script language="JavaScript"> 
+    function message(field){
+   window.status("You have placed the cursor in the " + field + "field!");
+    }
+    </script>
+  
+
+
+
+
+    <script type="text/javascript"> 
+      
+      function over() 
+      { 
+        alert("Mouse Over"); 
+      } 
+      function out() 
+      { 
+        alert("Mouse Out"); 
+      } 
+      </script> 
+      
 
     <script>
         var timerId; // current timer if started
@@ -52,5 +127,8 @@
 
     </script>
     <script src="js/myfunctions.js"></script>
+    <noscript>
+      Your browser does not support JavaScript!
+   </noscript>
 </body>
 </html>
