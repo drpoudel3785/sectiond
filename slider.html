@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Example</title>
+</head>
+<body onload="sliderStart()">
+    <img src="images/1.jpg" alt="Random Images" title="Random Images" id="randomImages" />
+
+    <script>
+    function sliderStart(){
+        setInterval(slider, 2500);
+                   slider();
+      }
+      function slider()
+      {
+      var myImages= new Array("images/1.jpg",  "images/3.jpg", "images/4.jpg", "images/5.jpg", "images/6.jpg");
+      var ranNumber = Math.floor(Math.random()* myImages.length);
+      document.getElementById("randomImages").src=myImages[ranNumber];
+      
+      }
+    </script>
+
+    
+</body>
+</html>

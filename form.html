@@ -17,13 +17,21 @@
 
 	<br/>
 	<h1>Sign UP</h1>
-	<form action="#" method="POST" name="singup" enctype="multipart/form-data">
+	<div id="singUpError" style="color:red;">
+
+	</div>
+	<form action="#" method="POST" name="singup" enctype="multipart/form-data" onsubmit="return validateSignup()">
 		<fieldset>
 			<legend>SingUP</legend>
 			<table border=0 cellpadding="5" cellspacing="5" width="75%" >
 				<tr>
 					<td><label>Full Name</label></td>
 					<td><input type="text" name="fullname" size="30" maxlength="50" required="required" placeholder="Full Name" /> * 
+					</td>
+				</tr>
+				<tr>
+					<td><label>Password</label></td>
+					<td><input type="password" name="password" size="30" maxlength="50" required="required" placeholder="Password" /> * 
 					</td>
 				</tr>
 				<tr>
@@ -86,5 +94,9 @@
 			</table> 
 		</fieldset>
 	</form>
+	<script src="js/singUp.js"></script>
+	<noscript>
+		Your browser does not support JavaScript!
+	 </noscript>
 </body>
 </html>

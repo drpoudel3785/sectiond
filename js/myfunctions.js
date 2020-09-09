@@ -1,7 +1,17 @@
 //no parameter no return type
+
+function sliderStart(){
+  setInterval(slider, 2500);
+             slider();
+}
+function slider()
+{
 var myImages= new Array("images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg", "images/6.jpg");
 var ranNumber = Math.floor(Math.random()* myImages.length);
 document.getElementById("randomImages").src=myImages[ranNumber];
+
+}
+
 
 
 function validateForm(){
@@ -28,9 +38,10 @@ function validateForm(){
         return false;
       }
         else if(name=="dharma" && password=="dharma"){
-            alert("Success Login;");
-            location.href = "http://thebritishcollege.edu.np";
+           // alert("Success Login;");
+            location.href = "/success.html";
             return false;
+            
         }
         else{
             document.getElementById("error").innerHTML="Usernam and Password Incorrect";
